@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(27, 23, 23);
+    height: 70px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+    line-height: 70px;
+    font-size: 22px;
+    font-family: sans-serif;
+    border-left: 2px solid red;
+    width: 170px;
+    color: white;
+    text-align: center;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+.sect1 {
+    height: 350px;
+    background-color: rgb(108, 108, 222);
+}
+
+.sect2 {
+    height: 250px;
+    background-color: white
+}
+
+.sect3 {
+    height: 800px;
+    background-color: pink;
+}
+
+.sect3div {
+    border: rgb(158, 111, 24) 3px solid
+}
+
+.proj1 {
+    height: 400px;
+    width: 100%;
+}
+
+.proj2 {
+    height: 400px;
+    width: 50%;
+}
+
+.proj3 {
+    height: 200px;
+    width: 40%;
+    float: right;
+    display: inline-block;
+    vertical-align: center;
+}
+
+.proj4 {}
+
+.sect4 {
+    height: 275px;
+    background-color: wheat;
+}
