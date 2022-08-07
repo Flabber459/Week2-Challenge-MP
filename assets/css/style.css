@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, verdana;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(27, 23, 23);
+    height: 70px;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    float: right;
+    line-height: 70px;
+    font-size: 22px;
+    font-family: sans-serif;
+    border-left: 2px solid red;
+    width: 170px;
+    color: white;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-style: impact;
+    line-height: 350px;
+    font-size: 110px;
+    color: white;
+}
+
+.sect1 {
+    height: 350px;
+    background-color: rgb(71, 71, 206);
+}
+
+.sect2 {
+    height: 250px;
+    background-color: white
+}
+
+section {
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+section h2 {
+    font-size: 30px;
+    margin: 15px 0 15px 50px;
+}
+
+section p {
+    margin: 0 0 10px 20px;
+    width: 70%;
+    float: left;
+    clear: both;
+}
+
+.MyPicture {
+    height: 200px;
+    width: 200px;
+    border: 2px solid blue;
+    margin-right: 40px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.sect3 {
+    background-color: pink;
+    height: 800px
+}
+
+.proj1 {
+    height: 380px;
+    width: 95%;
+    background-color: red;
+    margin: 20px
+}
+
+.proj2 {
+    height: 360px;
+    width: 45%;
+    background-color: blue;
+    padding-left: 10px
+}
+
+.proj3 {
+    height: 160px;
+    width: 45%;
+    background-color: purple;
+    position: relative;
+    left: 52%;
+    bottom: 360px;
+    padding: 10px;
+}
+
+.proj4 {
+    background-color: orange;
+    width: 45%;
+    height: 160px;
+    position: relative;
+    left: 52%;
+    bottom: 330px;
+    padding-top: 10px
+}
+
+.sect4 {
+    height: 275px;
+    background-color: wheat;
+}
+
+.sect4 a {
+    text-decoration: none;
+}
+
+.RandomPic {
+    height: 200px;
+    width: 200px;
+    border: 2px solid blue;
+    margin-right: 40px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+}
