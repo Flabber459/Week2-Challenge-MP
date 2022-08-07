@@ -43,12 +43,11 @@ h1 {
 
 .sect2 {
     height: 250px;
-    background-color: white
+    background-color: white;
+    flex-wrap: wrap;
 }
 
 section {
-    flex-wrap: wrap;
-    flex-grow: 1;
 }
 
 section h2 {
@@ -57,59 +56,127 @@ section h2 {
 }
 
 section p {
-    margin: 0 0 10px 20px;
+    margin: 0 40px 10px 20px;
     width: 70%;
     float: left;
     clear: both;
+    padding-right: 4%;
 }
 
 .MyPicture {
-    height: 200px;
+    height: 150px;
     width: 200px;
     border: 2px solid blue;
-    margin-right: 40px;
     flex-grow: 1;
     flex-shrink: 0;
     display: flex;
+    justify-self: flex-end;
 }
 
 .sect3 {
-    background-color: pink;
-    height: 800px
+    width: 100%;
 }
 
 .proj1 {
-    height: 380px;
-    width: 95%;
-    background-color: red;
-    margin: 20px
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.proj1i {
+    height: 90%;
+    width: 90%;
+    background-color: blue;
+    margin: 40px;
+}
+
+#proj1in {
+}
+
+.no {
+    background-color: orange;
+    margin: 20px;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 140%;
+}
+
+.no:hover::after {
+    background-color: green;
+    content: "This is a description of the project";
+    width: 270px;
+    height: 30px;
+    color: black;
+    position: absolute;
+    left: 30px;
+    bottom: 64px;
+    font-size: 70%;
+    line-height: 30px;
 }
 
 .proj2 {
-    height: 360px;
-    width: 45%;
+    height: 400px;
+    width: 100%;
+    background-color: white;
+}
+
+.proj2i {
+    height: 90%;
+    width: 90%;
     background-color: blue;
-    padding-left: 10px
+    margin: 20px;
+}
+
+#proj2in {
 }
 
 .proj3 {
-    height: 160px;
-    width: 45%;
-    background-color: purple;
-    position: relative;
-    left: 52%;
-    bottom: 360px;
-    padding: 10px;
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    justify-self: flex-end;
+}
+
+.proj3i {
+    height: 90%;
+    width: 90%;
+    background-color: blue;
+    margin: 10px;
+}
+
+#proj3in {
 }
 
 .proj4 {
-    background-color: orange;
-    width: 45%;
-    height: 160px;
-    position: relative;
-    left: 52%;
-    bottom: 330px;
-    padding-top: 10px
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    justify-self: flex-end;
+}
+
+.proj4i {
+    height: 90%;
+    width: 90%;
+    background-color: blue;
+    margin: 10px;
+}
+
+#proj4in {
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+    
+.container {
+    display: flex;
+    width: 100%;
 }
 
 .sect4 {
@@ -125,8 +192,8 @@ section p {
     height: 200px;
     width: 200px;
     border: 2px solid blue;
-    margin-right: 40px;
     flex-grow: 1;
     flex-shrink: 0;
     display: flex;
+    justify-self: flex-end;
 }
