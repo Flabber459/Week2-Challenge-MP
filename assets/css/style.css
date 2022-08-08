@@ -6,7 +6,7 @@
 }
 
 nav {
-    background-color: rgb(27, 23, 23);
+    background-color: rgba(211, 109, 0, 0.6);
     height: 70px;
 }
 
@@ -17,14 +17,14 @@ nav a {
     line-height: 70px;
     font-size: 22px;
     font-family: sans-serif;
-    border-left: 2px solid red;
+    border-left: 2px solid rgb(208, 205, 17);
     width: 170px;
     color: white;
     text-align: center;
 }
 
 nav a:hover {
-    background-color: white;
+    background-color: rgb(60, 55, 55);
     color: black;
 }
 
@@ -34,11 +34,21 @@ h1 {
     line-height: 350px;
     font-size: 110px;
     color: white;
+    color: rgb(252, 252, 252);
 }
 
 .sect1 {
     height: 350px;
-    background-color: rgb(71, 71, 206);
+    background-image: linear-gradient(
+        rgba(217, 141, 18, 0.3) 0%,
+        rgba(211, 109, 0, 0.6) 50%,
+        rgba(217, 141, 18, 0.3) 100%
+        /*
+    rgba(5, 50, 99, 0.3) 0%,
+    rgba(64, 45, 206, 0.3) 50%,
+    rgba(71, 53, 156, 0.6) 100%
+    */
+  );
 }
 
 .sect2 {
@@ -52,11 +62,11 @@ section {
 
 section h2 {
     font-size: 30px;
-    margin: 15px 0 15px 50px;
+    margin: 30px 0 15px 50px;
 }
 
 section p {
-    margin: 0 40px 10px 20px;
+    margin: 0 40px 10px 30px;
     width: 70%;
     float: left;
     clear: both;
@@ -64,13 +74,10 @@ section p {
 }
 
 .MyPicture {
-    height: 150px;
-    width: 200px;
-    border: 2px solid blue;
+    height: 267px;
+    width: 200;
     flex-grow: 1;
     flex-shrink: 0;
-    display: flex;
-    justify-self: flex-end;
 }
 
 .sect3 {
@@ -87,21 +94,25 @@ section p {
 .proj1i {
     height: 90%;
     width: 90%;
-    background-color: blue;
-    margin: 40px;
+    background-image: linear-gradient(
+        rgba(211, 109, 0, 0.6) 0%,
+        rgba(217, 141, 18, 0.3) 50%,
+        rgba(211, 109, 0, 0.6) 100%
+  );
+  margin-left: 5%;
+  margin-right: 4%;
 }
 
 #proj1in {
 }
 
 .no {
-    background-color: orange;
+    background-color: white;
     margin: 20px;
     height: 50px;
     width: 200px;
     text-align: center;
     line-height: 50px;
-    color: white;
     font-size: 140%;
 }
 
@@ -122,12 +133,17 @@ section p {
     height: 400px;
     width: 100%;
     background-color: white;
+    margin-left: 2%
 }
 
 .proj2i {
     height: 90%;
     width: 90%;
-    background-color: blue;
+    background-image: linear-gradient(
+        rgba(217, 141, 18, 0.3) 0%,
+        rgba(211, 109, 0, 0.6) 50%,
+        rgba(217, 141, 18, 0.3) 100%
+  );
     margin: 20px;
 }
 
@@ -144,7 +160,11 @@ section p {
 .proj3i {
     height: 90%;
     width: 90%;
-    background-color: blue;
+    background-image: linear-gradient(
+        rgba(217, 141, 18, 0.3) 0%,
+        rgba(211, 109, 0, 0.6) 50%,
+        rgba(217, 141, 18, 0.3) 100%
+  );
     margin: 10px;
 }
 
@@ -161,7 +181,11 @@ section p {
 .proj4i {
     height: 90%;
     width: 90%;
-    background-color: blue;
+    background-image: linear-gradient(
+        rgba(217, 141, 18, 0.3) 0%,
+        rgba(211, 109, 0, 0.6) 50%,
+        rgba(217, 141, 18, 0.3) 100%
+  );
     margin: 10px;
 }
 
@@ -184,8 +208,20 @@ section p {
     background-color: wheat;
 }
 
+.sect4 h2 {
+    padding: 15px 15px 0 15px;
+    margin-left: 8%;
+}
+
+.sect4 p {
+    padding: 10px 0 0 20px;
+    font-size: 110%;
+    margin-left: 5%;
+}
+
 .sect4 a {
     text-decoration: none;
+    color: red;
 }
 
 .RandomPic {
@@ -194,6 +230,4 @@ section p {
     border: 2px solid blue;
     flex-grow: 1;
     flex-shrink: 0;
-    display: flex;
-    justify-self: flex-end;
 }
