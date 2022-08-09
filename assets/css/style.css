@@ -42,11 +42,6 @@ h1 {
         rgba(217, 141, 18, 0.3) 0%,
         rgba(211, 109, 0, 0.6) 50%,
         rgba(217, 141, 18, 0.3) 100%
-        /*
-    rgba(5, 50, 99, 0.3) 0%,
-    rgba(64, 45, 206, 0.3) 50%,
-    rgba(71, 53, 156, 0.6) 100%
-    */
   );
     border-width: 6px 0 6px 0;
     border-color: black;
@@ -68,7 +63,7 @@ section h2 {
     color: rgb(12, 82, 180);
 }
 
-section p {
+.sect2 p {
     margin: 0 40px 10px 5%;
     width: 70%;
     float: left;
@@ -211,7 +206,11 @@ section p {
 
 .sect4 {
     height: 275px;
-    background-color: wheat;
+    background-color: rgba(245, 155, 59, 0.6);
+    border: 6px 0 6px 0;
+    border-style: solid;
+    border-color: black;
+    margin-top: 35px;
 }
 
 .sect4 h2 {
@@ -230,10 +229,6 @@ section p {
     color: red;
 }
 
-.RandomPic {
-    height: 200px;
-    width: 200px;
-    border: 2px solid blue;
-    flex-grow: 1;
-    flex-shrink: 0;
+.contactsection {
+    display: inline;
 }
