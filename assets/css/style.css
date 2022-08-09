@@ -205,7 +205,7 @@ section h2 {
 }
 
 .sect4 {
-    height: 275px;
+    height: 190px;
     background-color: rgba(245, 155, 59, 0.6);
     border: 6px 0 6px 0;
     border-style: solid;
@@ -214,21 +214,24 @@ section h2 {
 }
 
 .sect4 h2 {
-    padding: 15px 15px 0 15px;
-    margin-left: 8%;
+    padding: 0 15px 0 15px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 .sect4 p {
-    padding: 10px 0 0 20px;
-    font-size: 110%;
-    margin-left: 5%;
+    padding: 5% 0 0 11%;
+    font-size: 105%
+}
+
+.contactsection {
+    display: inline;
+    margin: 0 5%;
 }
 
 .sect4 a {
     text-decoration: none;
     color: red;
+    font-size: 105%;
 }
 
-.contactsection {
-    display: inline;
-}
