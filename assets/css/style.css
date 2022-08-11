@@ -15,7 +15,7 @@
     display: inline-block;
     float: right;
     line-height: 70px;
-    font-size: 22px;
+    font-size: 130%;
     font-family: sans-serif;
     border-left: 2px solid black;
     width: 170px;
@@ -32,7 +32,7 @@ h1 {
     text-align: center;
     font-style: impact;
     line-height: 350px;
-    font-size: 110px;
+    font-size: 675%;
     color: white;
     white-space: nowrap;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 section h2 {
-    font-size: 30px;
+    font-size: 190%;
     margin: 30px 0 15px 50px;
     color: rgb(12, 82, 180);
 }
@@ -232,7 +232,7 @@ section h2 {
     text-align: center;
     line-height: 95px;
     color: rgb(221, 233, 244);
-    font-size: 126%;
+    font-size: 125%;
     border: black 3px solid;
 }
 
@@ -254,11 +254,23 @@ a:hover {
 */
 
 @media screen and (max-width: 992px) {
-    h1 {
-        color: blue
-    }
-
     .sect2 {
         height: 500px;
     }
+}
+
+@media screen and (max-width: 576px) {
+    .topnav a {
+        width: 140px;
+    }
+    .container {
+        display: initial;
+    }
+    .proj2 {
+        margin: 0;
+    }
+    .proj3, .proj4 {
+        margin-left: 10px;
+    }
+    
 }
