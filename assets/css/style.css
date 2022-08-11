@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, verdana;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
 .topnav {
@@ -16,7 +16,6 @@
     float: right;
     line-height: 70px;
     font-size: 130%;
-    font-family: sans-serif;
     border-left: 2px solid black;
     width: 170px;
     color: rgb(221, 233, 244);
@@ -27,7 +26,7 @@
     background-color: rgb(221, 233, 244);
     color: rgba(211, 109, 0, 0.6);
 }
-
+/*
 h1 {
     text-align: center;
     font-style: impact;
@@ -36,7 +35,7 @@ h1 {
     color: white;
     white-space: nowrap;
 }
-
+*/
 .sect1 {
     height: 350px;
     background-image: linear-gradient(
@@ -75,8 +74,6 @@ section h2 {
 .MyPicture {
     height: 267px;
     width: 200;
-    flex-grow: 1;
-    flex-shrink: 0;
 }
 
 .sect3 {
@@ -121,21 +118,23 @@ section h2 {
     line-height: 50px;
     font-size: 140%;
     color: rgb(12, 82, 180);
+    border: black 2px solid
 }
-
-.no:hover::after {
-    background-color: green;
-    content: "This is a description of the project";
-    width: 270px;
+/*
+#proj1in[data-descr]:hover::after {
+    background-color: rgb(221, 233, 244);
+    content: attr(data-descr);
+    width: 310px;
     height: 30px;
     color: black;
-    position: absolute;
-    left: 30px;
-    bottom: 64px;
-    font-size: 70%;
+    position: fixed;
+    left: 20px;
+    top: 57vh;
+    border: 2px solid black;
     line-height: 30px;
+    font-size: 80%;
 }
-
+*/
 .proj2 {
     height: 400px;
     width: 100%;
@@ -227,13 +226,12 @@ section h2 {
 .sect4 a {
     text-decoration: none;
     display: inline-block;
-    height: 100%;
+    height: 101px;
     width: 33%;
     text-align: center;
     line-height: 95px;
     color: rgb(221, 233, 244);
     font-size: 125%;
-    border: black 3px solid;
 }
 
 a:hover {
@@ -246,22 +244,50 @@ a:hover {
     display: inline-block;
     line-height: 70px;
     font-size: 22px;
-    font-family: sans-serif;
     width: 170px;
     color: rgb(221, 233, 244);
     text-align: center;
 }
 */
 
+@media screen and (max-width: 1100px) {
+    .sect4 {
+        height: 400px;
+    }
+    
+    .sect4 nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .sect4 a {
+        width: 100%;
+        border-top: 3px solid black;
+    }
+    /*
+    #proj1in[data-descr]:hover::after {
+        top: 38vh;
+    */
+}
+
 @media screen and (max-width: 992px) {
     .sect2 {
         height: 500px;
+    }
+    .sect2 p {
+        width: 95%;
+    }
+    .MyPicture {
+        margin-left: 40%;
+        margin-top: 10px
     }
 }
 
 @media screen and (max-width: 576px) {
     .topnav a {
         width: 140px;
+    }
+    .sect2 {
+        height: 550px
     }
     .container {
         display: initial;
