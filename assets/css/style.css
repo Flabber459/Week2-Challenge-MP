@@ -69,6 +69,7 @@ section h2 {
     float: left;
     clear: both;
     padding-right: 4%;
+    color: rgb(34, 35, 2);
 }
 
 .MyPicture {
@@ -287,7 +288,7 @@ a:hover {
         width: 140px;
     }
     .sect2 {
-        height: 550px
+        height: 580px
     }
     .container {
         display: initial;
