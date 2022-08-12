@@ -1,8 +1,5 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, Arial, verdana;
-    box-sizing: border-box;    
+    font-family: Helvetica, Arial, verdana; 
 }
 
 .topnav {
@@ -21,14 +18,13 @@
     color: rgb(221, 233, 244);
     text-align: center;
 }
-
+/* When user hovers over nav options, colour style inverts */
 .topnav a:hover {
     background-color: rgb(221, 233, 244);
     color: rgba(211, 109, 0, 0.6);
 }
 
 h2 {
-    font-style: arial;
     font-size: 225%;
     color: white;
     white-space: nowrap;
@@ -49,7 +45,7 @@ h1 a {
     text-shadow: 6px 6px 4px grey;
     white-space: pre-wrap;
 }
-
+/* When "Explore Projects" is hovered, text gets slightly bigger" */
 h1 a:hover {
     color: white;
     font-size: 600%;
@@ -88,7 +84,8 @@ section h3 {
     float: left;
     clear: both;
     padding-right: 4%;
-    color: rgb(34, 35, 2);
+    color: rgb(32, 43, 113);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .MyPicture {
@@ -107,7 +104,7 @@ section h3 {
 .proj {
     border: black 3px solid;
 }
-
+/* When project is hovered over, opacity goes from low to normal */
 .proj1 {
     height: 400px;
     width: 100%;
@@ -131,9 +128,6 @@ section h3 {
   margin-right: 4%;
 }
 
-#proj1in {
-}
-
 .no {
     background-color: rgb(221, 233, 244);
     margin: 20px;
@@ -145,21 +139,7 @@ section h3 {
     color: rgb(12, 82, 180);
     border: black 2px solid;
 }
-/*
-#proj1in[data-descr]:hover::after {
-    background-color: rgb(221, 233, 244);
-    content: attr(data-descr);
-    width: 310px;
-    height: 30px;
-    color: black;
-    position: fixed;
-    left: 20px;
-    top: 57vh;
-    border: 2px solid black;
-    line-height: 30px;
-    font-size: 80%;
-}
-*/
+/* When project is hovered over, opacity goes from low to normal */
 .proj2 {
     height: 400px;
     width: 100%;
@@ -181,10 +161,7 @@ section h3 {
   );
     margin: 20px;
 }
-
-#proj2in {
-}
-
+/* When project is hovered over, opacity goes from low to normal */
 .proj3 {
     height: 200px;
     width: 100%;
@@ -205,10 +182,7 @@ section h3 {
   );
     margin: 10px;
 }
-
-#proj3in {
-}
-
+/* When project is hovered over, opacity goes from low to normal */
 .proj4 {
     height: 200px;
     width: 100%;
@@ -229,10 +203,7 @@ section h3 {
 .proj4:hover {
     opacity: 1;
 }
-
-#proj4in {
-}
-
+/* Use of flexbox with .group and .container classes to create layout for projects */
 .group {
     display: flex;
     flex-direction: column;
@@ -274,26 +245,14 @@ section h3 {
     color: rgb(221, 233, 244);
     font-size: 125%;
 }
-
+/* Contact links turn a different colour when they are hovered over */
 a:hover {
     color: rgb(12, 82, 180);
 }
-
-/* 
-.sect4 a {
-    text-decoration: none;
-    display: inline-block;
-    line-height: 70px;
-    font-size: 22px;
-    width: 170px;
-    color: rgb(221, 233, 244);
-    text-align: center;
-}
-*/
-
+/* From this screen size downwards, contact section becomes layered vertically */
 @media screen and (max-width: 1100px) {
     .sect4 {
-        height: 400px;
+        height: 300px;
     }
     
     .sect4 nav {
@@ -303,14 +262,12 @@ a:hover {
     }
     .sect4 a {
         width: 100%;
+        height: 70px;
         border-top: 3px solid black;
+        line-height: 70px;
     }
-    /*
-    #proj1in[data-descr]:hover::after {
-        top: 38vh;
-    */
 }
-
+/* Heading section gets smaller, image moves under text */
 @media screen and (max-width: 992px) {
     .sect1 {
         height: 250px;
@@ -341,7 +298,7 @@ a:hover {
         margin-left: 55px;
     }
 }
-
+/* Heading section gets smaller again */
 @media screen and (max-width: 768px) {
     .sect1 {
         height: 200px;
@@ -352,7 +309,7 @@ a:hover {
         line-height: 120px;
     }
 }   
-
+/* Nav section takes up full width of page, project section collapses into one column */
 @media screen and (max-width: 576px) {
     .topnav {
         width: 100%;
@@ -377,7 +334,7 @@ a:hover {
         margin-left: 10px;
     }
 }
-
+/* hover effect for heading section removed for smallest screen sizes */
 @media screen and (max-width: 430px) {
     h1 a:hover {
         font-size: 500%;
