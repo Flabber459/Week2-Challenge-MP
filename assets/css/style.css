@@ -309,7 +309,7 @@ a:hover {
         line-height: 120px;
     }
 }   
-/* Nav section takes up full width of page, project section collapses into one column */
+/* Top nav section takes up full width of page, project section collapses into one column */
 @media screen and (max-width: 576px) {
     .topnav {
         width: 100%;
